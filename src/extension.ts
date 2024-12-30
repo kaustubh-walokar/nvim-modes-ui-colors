@@ -16,7 +16,9 @@ function updateColors(
   workbenchConfig.update('colorCustomizations', colorCustomizations, vscode.ConfigurationTarget.Workspace);
 }
 
+
 const luaCreateConfig = [
+
   "local vscode = require('vscode')",
   "local function send_mode()",
   "  local mode = vim.api.nvim_get_mode().mode",
@@ -28,7 +30,7 @@ const luaCreateConfig = [
   "    vscode.call('nvim-ui-modes.replace')",
   "  elseif mode == 'n' then",
   "    vscode.call('nvim-ui-modes.normal')",
-  "  elseif mode == 'V' or mode == 'v' or mode == '^V' then",
+  "  elseif mode == 'V' or mode == 'v' or mode == '\\x16' then",
   "    vscode.call('nvim-ui-modes.visual')",
   "  end",
   "end",
