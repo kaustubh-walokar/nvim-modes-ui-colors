@@ -5,7 +5,7 @@
   "author": "Kaustubh Walokar",
   "repository": {
     "type": "git",
-    "url": "https://github.com/kaustubh-walokar/nvim-ui-modes.git"
+    "url": "https://github.com/kaustubh-walokar/nvim-modes-ui-colors"
   },
   "keywords": [
     "neovim",
@@ -15,7 +15,7 @@
     "modes"
   ],
   "icon": "resources/logo.png",
-  "version": "0.9.3",
+  "version": "0.9.5",
   "license": "MIT",
   "engines": {
     "vscode": "^1.96.0"
