@@ -57,14 +57,15 @@ export function activate(context: vscode.ExtensionContext) {
   const activeTextEditor = vscode.window.activeTextEditor;
   const resource = activeTextEditor ? activeTextEditor.document.uri : null;
 
-  const workbenchConfig = getConfiguration('workbench', resource);
-  
-
+ 
+  const colorCustomizations = getColorCustomization(getConfiguration('nvim-ui-modes', resource));
   const modes = ['normal', 'command', 'insert', 'visual', 'replace'];
 
   modes.forEach((mode) => {
     const disposable = vscode.commands.registerCommand(`nvim-ui-modes.${mode}`, () => {
-      const colorCustomizations = getColorCustomization(getConfiguration('nvim-ui-modes', resource));
+      
+      const workbenchConfig = getConfiguration('workbench', resource);
+  
       updateColors(workbenchConfig, colorCustomizations[mode]);
     });
     context.subscriptions.push(disposable);
