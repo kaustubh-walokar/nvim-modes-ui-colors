@@ -103,11 +103,8 @@ You can customize these and more UI elements:
 
 If you find this extension helpful, consider supporting its development:
 
-### 💸 Donate
-
-- **BTC Address**: `bc1qajl9nu6slw0gevk2vhl2qh0u3nepndf786g400`
-- **PayPal**: [paypal.me/aismith42](https://paypal.me/aismith42)
-
 ---
+
+
 
 Thank you for your support! Your contributions help keep this project alive. 😊

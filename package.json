@@ -1,8 +1,8 @@
 {
-  "name": "nvim-ui-modes",
-  "displayName": "Neovim UI Colors",
+  "name": "nvim-colorize-modes",
+  "displayName": "Neovim UI Colorize",
   "description": "Adjust UI colors dynamically based on NVim modes",
-  "author": "Timur Kussainov kusainov.timur@gmail.com",
+  "author": "Kaustubh Walokar",
   "repository": {
     "type": "git",
     "url": "https://github.com/kaustubh-walokar/nvim-ui-modes.git"
@@ -31,7 +31,7 @@
     "ui",
     "workspace"
   ],
-  "publisher": "Kaustubh",
+  "publisher": "KaustubhWalokar",
   "activationEvents": [
     "onStartupFinished"
   ],
@@ -60,7 +60,7 @@
       }
     ],
     "configuration": {
-      "title": "Neovim Color Modes",
+      "title": "Neovim Colorize Modes",
       "properties": {
         "nvim-ui-modes.colorCustomizations": {
           "type": "object",
