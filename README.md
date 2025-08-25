@@ -1,5 +1,7 @@
 # NeoVim UI Modes
 
+### [Install from VSCode Marketplace](https://marketplace.visualstudio.com/items?itemName=KaustubhWalokar.nvim-colorize-modes)
+
 Enhance your coding experience with the NeoVim UI Modes extension for Visual Studio Code! This extension dynamically adjusts your UI colors based on the current NeoVim mode, providing a seamless and immersive editing environment.
 
 ![Demo](resources/demo.gif)
@@ -104,7 +106,5 @@ You can customize these and more UI elements:
 If you find this extension helpful, consider supporting its development:
 
 ---
-
-
 
 Thank you for your support! Your contributions help keep this project alive. 😊
