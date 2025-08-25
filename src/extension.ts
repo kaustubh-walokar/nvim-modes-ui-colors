@@ -1,4 +1,5 @@
 import * as vscode from 'vscode';
+import { workspace } from 'vscode';
 
 function getConfiguration(section = '', resource: vscode.Uri | null = null) {
   return vscode.workspace.getConfiguration(section, resource);
@@ -57,16 +58,19 @@ export function activate(context: vscode.ExtensionContext) {
   const activeTextEditor = vscode.window.activeTextEditor;
   const resource = activeTextEditor ? activeTextEditor.document.uri : null;
 
- 
   const colorCustomizations = getColorCustomization(getConfiguration('nvim-ui-modes', resource));
   const modes = ['normal', 'command', 'insert', 'visual', 'replace'];
 
   modes.forEach((mode) => {
     const disposable = vscode.commands.registerCommand(`nvim-ui-modes.${mode}`, () => {
-      
+
       const workbenchConfig = getConfiguration('workbench', resource);
-  
-      updateColors(workbenchConfig, colorCustomizations[mode]);
+      const cc = JSON.parse(JSON.stringify(workspace.getConfiguration('workbench').get('colorCustomizations')));
+
+      updateColors(workbenchConfig, {
+        ...cc,
+        ...colorCustomizations[mode]
+      });
     });
     context.subscriptions.push(disposable);
   });
@@ -77,7 +81,7 @@ export function activate(context: vscode.ExtensionContext) {
       executeCommand(luaCreateConfig)
       clearInterval(interval);
     }
-  }, 1000);
+  }, 5000);
 }
 
 export function deactivate() {
