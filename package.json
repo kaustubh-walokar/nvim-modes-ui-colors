@@ -15,7 +15,7 @@
     "modes"
   ],
   "icon": "resources/logo.png",
-  "version": "0.9.5",
+  "version": "0.9.7",
   "license": "MIT",
   "engines": {
     "vscode": "^1.96.0"
