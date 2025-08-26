@@ -8,7 +8,7 @@ Enhance your coding experience with the NeoVim UI Modes extension for Visual Stu
 
 This is a fork of the [original](https://marketplace.visualstudio.com/items?itemName=AI-Smith.nvim-ui-modes) extension from here with some tweaks to make it work with other extenstions which modify the vscode ui element colors
 
-![Demo](resources/demo.gif)
+![Demo](resources/demo_new.gif)
 
 ---
 
