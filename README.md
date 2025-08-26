@@ -1,8 +1,12 @@
-# NeoVim UI Modes
+# NeoVim UI Colorizer
+
+<a href="https://www.buymeacoffee.com/kaustubhw" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important;" ></a>
 
 ### [Install from VSCode Marketplace](https://marketplace.visualstudio.com/items?itemName=KaustubhWalokar.nvim-colorize-modes)
 
-Enhance your coding experience with the NeoVim UI Modes extension for Visual Studio Code! This extension dynamically adjusts your UI colors based on the current NeoVim mode, providing a seamless and immersive editing environment.
+Enhance your coding experience with the NeoVim UI Modes extension for Visual Studio Code! This extension dynamically adjusts your UI colors based on the current NeoVim mode, providing a seamless and immersive editing environment. This extension works well with the [Window Colors extension](https://marketplace.visualstudio.com/items?itemName=stuart.unique-window-colors) to allow for the window titlebar colors to be updates.
+
+This is a fork of the [original](https://marketplace.visualstudio.com/items?itemName=AI-Smith.nvim-ui-modes) extension from here with some tweaks to make it work with other extenstions which modify the vscode ui element colors
 
 ![Demo](resources/demo.gif)
 
@@ -104,6 +108,8 @@ You can customize these and more UI elements:
 ## ❤️ Support the Project
 
 If you find this extension helpful, consider supporting its development:
+
+<a href="https://www.buymeacoffee.com/kaustubhw" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important;" ></a>
 
 ---
 
